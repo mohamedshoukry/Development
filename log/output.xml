@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.0 on win32)" generated="2026-01-21T19:59:06.501131" rpa="false" schemaversion="5">
+<suite id="s1" name="Iphone16" source="C:\Development\Tests\Iphone16.robot">
+<test id="s1-t1" name="Search for Iphone 16" line="14">
+<kw name="Begin WebTest" owner="common" type="SETUP">
+<kw name="Open Browser" owner="Browser">
+<msg time="2026-01-21T19:59:08.235898" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2026-01-21T19:59:08.243127" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Development\\log\\browser\\traces\\temp\\547953f1-df60-4133-add5-c4e1ec40265b"}</msg>
+<msg time="2026-01-21T19:59:08.392614" level="INFO">Starting Browser process C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js using port 64982</msg>
+<msg time="2026-01-21T19:59:08.395655" level="INFO">Node startup parameters: ['node', 'C:\\Users\\mshoukry\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\Browser\\wrapper\\index.js', '64982']</msg>
+<msg time="2026-01-21T19:59:14.162613" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Development\\log\\browser\\traces\\temp\\547953f1-df60-4133-add5-c4e1ec40265b"}</msg>
+<msg time="2026-01-21T19:59:14.167356" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2026-01-21T19:59:14.250288" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-21T19:59:14.250288" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2026-01-21T19:59:19.677238" level="INFO">Successfully initialized new page object and opened url: https://btech.com/ar/</msg>
+<arg>${Login_URL}</arg>
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2026-01-21T19:59:08.234027" elapsed="11.443717"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-01-21T19:59:19.684909" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 800,
+    "width": 1490
+  }
+}</msg>
+<msg time="2026-01-21T19:59:19.708926" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-21T19:59:19.709432" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 800, 'width': 1490}}</msg>
+<arg>viewport={'width': 1490, 'height': 800}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-01-21T19:59:19.679884" elapsed="0.030198"/>
+</kw>
+<status status="PASS" start="2026-01-21T19:59:08.231890" elapsed="11.478929"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-21T19:59:19.713143" level="INFO">Starting the testcase</msg>
+<arg>Starting the testcase</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-21T19:59:19.711449" elapsed="0.001774"/>
+</kw>
+<kw name="Search For Product" owner="HomePage">
+<msg time="2026-01-21T19:59:19.715611" level="FAIL">Keyword 'HomePage.Search For Product' expected 1 argument, got 0.</msg>
+<status status="FAIL" start="2026-01-21T19:59:19.714430" elapsed="0.001787">Keyword 'HomePage.Search For Product' expected 1 argument, got 0.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-01-21T19:59:19.716814" elapsed="0.000576"/>
+</kw>
+<kw name="End Webtest" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-01-21T19:59:20.649004" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-21T19:59:19.720299" elapsed="0.929210"/>
+</kw>
+<status status="PASS" start="2026-01-21T19:59:19.718570" elapsed="0.931952"/>
+</kw>
+<doc>Search for Iphone 16</doc>
+<tag>Functional</tag>
+<tag>Search</tag>
+<tag>TC001</tag>
+<status status="FAIL" start="2026-01-21T19:59:08.229817" elapsed="12.421417">Keyword 'HomePage.Search For Product' expected 1 argument, got 0.</status>
+</test>
+<doc>Test Suite For Btech website</doc>
+<status status="FAIL" start="2026-01-21T19:59:06.511751" elapsed="14.229701"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Functional</stat>
+<stat pass="0" fail="1" skip="0">Search</stat>
+<stat pass="0" fail="1" skip="0">TC001</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Iphone16">Iphone16</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-21T19:59:08.235898" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>

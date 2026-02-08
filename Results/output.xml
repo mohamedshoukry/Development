@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.0 on win32)" generated="2026-01-29T15:14:53.401730" rpa="false" schemaversion="5">
+<suite id="s1" name="Iphone16" source="C:\Development\Tests\Iphone16.robot">
+<test id="s1-t1" name="Search for Iphone 16" line="14">
+<kw name="Begin WebTest" owner="common" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-01-29T15:14:54.687320" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Development\\Results\\browser\\traces\\temp\\59d365a4-44f7-44e7-909a-a2da3f2a192b"}</msg>
+<msg time="2026-01-29T15:14:54.770630" level="INFO">Starting Browser process C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js using port 63601</msg>
+<msg time="2026-01-29T15:14:54.772492" level="INFO">Node startup parameters: ['node', 'C:\\Users\\mshoukry\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\Browser\\wrapper\\index.js', '63601']</msg>
+<msg time="2026-01-29T15:15:00.324239" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Development\\Results\\browser\\traces\\temp\\59d365a4-44f7-44e7-909a-a2da3f2a192b"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-01-29T15:14:54.685720" elapsed="5.638519"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2026-01-29T15:15:00.334546" level="INFO">No context open.</msg>
+<arg>30</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2026-01-29T15:15:00.324750" elapsed="0.009796"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-01-29T15:15:09.299831" level="INFO">Successfully initialized new page object and opened url: https://btech.com/ar/</msg>
+<msg time="2026-01-29T15:15:09.299831" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${Login_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-01-29T15:15:00.334546" elapsed="8.965285"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-29T15:15:12.317203" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-29T15:15:09.304909" elapsed="3.012801"/>
+</kw>
+<status status="PASS" start="2026-01-29T15:14:54.683609" elapsed="17.634101"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-29T15:15:12.318857" level="INFO">Starting the testcase</msg>
+<arg>Starting the testcase</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-29T15:15:12.318857" elapsed="0.000000"/>
+</kw>
+<kw name="Search For Product" owner="HomePage">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-29T15:15:12.586109" level="INFO">Waited for Element with selector //input[@data-testid="search-input"] &gt;&gt; visible=true at state visible</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-29T15:15:12.326666" elapsed="0.259443"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-29T15:15:12.590462" level="INFO">Fills the text 'iphone16' in the given field.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>${product_name}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-29T15:15:12.589187" elapsed="0.070542"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>${SEARCH_BOX}</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-29T15:15:12.660234" elapsed="0.110924"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-29T15:15:17.778140" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-29T15:15:12.771767" elapsed="5.008392"/>
+</kw>
+<arg>iphone16</arg>
+<status status="PASS" start="2026-01-29T15:15:12.324882" elapsed="5.456296"/>
+</kw>
+<kw name="Verify Search Result Is Displayed And Click on Iphone 16" owner="SearchResults">
+<kw name="Get Elements" owner="Browser">
+<msg time="2026-01-29T15:15:17.897292" level="INFO">Found locator('//article//footer//h2[@class=\'text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium\']').first(),locator('//article//footer//h2[@class=\'text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium\']').nth(1),locator('//article//footer//h2[@class=\'text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium\']').nth(2),locator('//article//footer//h2[@class=\'text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium\']').nth(3),locator('//article//footer//h2[@class=\'text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium\']').nth(4),locator('//article//footer//h2[@class=\'text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium\']').nth(5),locator('//article//footer//h2[@class=\'text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium\']').nth(6),locator('//article//footer//h2[@class=\'text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium\']').nth(7) Locators successfully.</msg>
+<msg time="2026-01-29T15:15:17.897292" level="INFO">${PRODUCT_TEXT} = ["//article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] &gt;&gt; nth=0", "//article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text...</msg>
+<var>${PRODUCT_TEXT}</var>
+<arg>${PRODUCT_LINK}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2026-01-29T15:15:17.806467" elapsed="0.090825"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2026-01-29T15:15:17.897292" level="INFO">Length is 8.</msg>
+<msg time="2026-01-29T15:15:17.897292" level="INFO">${PRODUCT_COUNT} = 8</msg>
+<var>${PRODUCT_COUNT}</var>
+<arg>${PRODUCT_TEXT}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2026-01-29T15:15:17.897292" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-01-29T15:15:17.981297" level="INFO">Text: 'ابل ايفون 13 ، سعة 128 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت'</msg>
+<msg time="2026-01-29T15:15:17.981297" level="INFO">${PRODUCT_NAME} = ابل ايفون 13 ، سعة 128 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت</msg>
+<var>${PRODUCT_NAME}</var>
+<arg>${PRODUCT_TEXT}[${i}]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-29T15:15:17.904830" elapsed="0.076467"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
+<msg time="2026-01-29T15:15:17.984809" level="FAIL">'ابل ايفون 13 ، سعة 128 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت' does not contain 'ايفون 16 ،'</msg>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="FAIL" start="2026-01-29T15:15:17.981297" elapsed="0.003512">'ابل ايفون 13 ، سعة 128 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت' does not contain 'ايفون 16 ،'</status>
+</kw>
+<msg time="2026-01-29T15:15:17.986733" level="INFO">${STATUS} = False</msg>
+<var>${STATUS}</var>
+<arg>Should Contain</arg>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-29T15:15:17.981297" elapsed="0.005436"/>
+</kw>
+<if>
+<branch type="IF" condition="${STATUS} == True">
+<kw name="Click" owner="Browser">
+<arg>${PRODUCT_TEXT}[${i}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-01-29T15:15:17.987878" elapsed="0.000000"/>
+</kw>
+<return>
+<status status="NOT RUN" start="2026-01-29T15:15:17.987878" elapsed="0.000000"/>
+</return>
+<status status="NOT RUN" start="2026-01-29T15:15:17.986733" elapsed="0.001145"/>
+</branch>
+<branch type="ELSE">
+<kw name="Continue For Loop" owner="BuiltIn">
+<msg time="2026-01-29T15:15:17.990374" level="INFO">Continuing for loop from the next iteration.</msg>
+<doc>Skips the current FOR loop iteration and continues from the next.</doc>
+<status status="PASS" start="2026-01-29T15:15:17.987878" elapsed="0.002496"/>
+</kw>
+<status status="PASS" start="2026-01-29T15:15:17.987878" elapsed="0.002496"/>
+</branch>
+<status status="PASS" start="2026-01-29T15:15:17.986733" elapsed="0.003641"/>
+</if>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-01-29T15:15:17.903822" elapsed="0.086552"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-01-29T15:15:18.032083" level="INFO">Text: 'ابل ايفون 13 ، سعة 256 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت'</msg>
+<msg time="2026-01-29T15:15:18.032083" level="INFO">${PRODUCT_NAME} = ابل ايفون 13 ، سعة 256 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت</msg>
+<var>${PRODUCT_NAME}</var>
+<arg>${PRODUCT_TEXT}[${i}]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-29T15:15:17.990374" elapsed="0.041709"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
+<msg time="2026-01-29T15:15:18.035094" level="FAIL">'ابل ايفون 13 ، سعة 256 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت' does not contain 'ايفون 16 ،'</msg>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="FAIL" start="2026-01-29T15:15:18.035094" elapsed="0.000000">'ابل ايفون 13 ، سعة 256 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت' does not contain 'ايفون 16 ،'</status>
+</kw>
+<msg time="2026-01-29T15:15:18.037814" level="INFO">${STATUS} = False</msg>
+<var>${STATUS}</var>
+<arg>Should Contain</arg>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.032083" elapsed="0.005731"/>
+</kw>
+<if>
+<branch type="IF" condition="${STATUS} == True">
+<kw name="Click" owner="Browser">
+<arg>${PRODUCT_TEXT}[${i}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-01-29T15:15:18.037814" elapsed="0.000000"/>
+</kw>
+<return>
+<status status="NOT RUN" start="2026-01-29T15:15:18.037814" elapsed="0.000000"/>
+</return>
+<status status="NOT RUN" start="2026-01-29T15:15:18.037814" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Continue For Loop" owner="BuiltIn">
+<msg time="2026-01-29T15:15:18.037814" level="INFO">Continuing for loop from the next iteration.</msg>
+<doc>Skips the current FOR loop iteration and continues from the next.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.037814" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-01-29T15:15:18.037814" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-01-29T15:15:18.037814" elapsed="0.000000"/>
+</if>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-01-29T15:15:17.990374" elapsed="0.047440"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-01-29T15:15:18.080014" level="INFO">Text: 'ابل ايفون 16 بلس ، سعة 128 جيجا بايت ، رام 8 جيجا بايت ، شبكة 5G ، شريحة واحدة - اسود'</msg>
+<msg time="2026-01-29T15:15:18.080014" level="INFO">${PRODUCT_NAME} = ابل ايفون 16 بلس ، سعة 128 جيجا بايت ، رام 8 جيجا بايت ، شبكة 5G ، شريحة واحدة - اسود</msg>
+<var>${PRODUCT_NAME}</var>
+<arg>${PRODUCT_TEXT}[${i}]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.037814" elapsed="0.044951"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
+<msg time="2026-01-29T15:15:18.085982" level="FAIL">'ابل ايفون 16 بلس ، سعة 128 جيجا بايت ، رام 8 جيجا بايت ، شبكة 5G ، شريحة واحدة - اسود' does not contain 'ايفون 16 ،'</msg>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="FAIL" start="2026-01-29T15:15:18.084860" elapsed="0.001662">'ابل ايفون 16 بلس ، سعة 128 جيجا بايت ، رام 8 جيجا بايت ، شبكة 5G ، شريحة واحدة - اسود' does not contain 'ايفون 16 ،'</status>
+</kw>
+<msg time="2026-01-29T15:15:18.086522" level="INFO">${STATUS} = False</msg>
+<var>${STATUS}</var>
+<arg>Should Contain</arg>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.083273" elapsed="0.003249"/>
+</kw>
+<if>
+<branch type="IF" condition="${STATUS} == True">
+<kw name="Click" owner="Browser">
+<arg>${PRODUCT_TEXT}[${i}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-01-29T15:15:18.088612" elapsed="0.000536"/>
+</kw>
+<return>
+<status status="NOT RUN" start="2026-01-29T15:15:18.089683" elapsed="0.000537"/>
+</return>
+<status status="NOT RUN" start="2026-01-29T15:15:18.087454" elapsed="0.002766"/>
+</branch>
+<branch type="ELSE">
+<kw name="Continue For Loop" owner="BuiltIn">
+<msg time="2026-01-29T15:15:18.092368" level="INFO">Continuing for loop from the next iteration.</msg>
+<doc>Skips the current FOR loop iteration and continues from the next.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.091286" elapsed="0.001082"/>
+</kw>
+<status status="PASS" start="2026-01-29T15:15:18.090220" elapsed="0.002683"/>
+</branch>
+<status status="PASS" start="2026-01-29T15:15:18.087454" elapsed="0.005449"/>
+</if>
+<var name="${i}">2</var>
+<status status="PASS" start="2026-01-29T15:15:18.037814" elapsed="0.055089"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-01-29T15:15:18.128235" level="INFO">Text: 'ابل ايفون 17 اير ، سعة 256 جيجا بايت ، رام 8 جيجا بايت ، شبكة 5G ، شريحتين - اسود سبيس'</msg>
+<msg time="2026-01-29T15:15:18.128752" level="INFO">${PRODUCT_NAME} = ابل ايفون 17 اير ، سعة 256 جيجا بايت ، رام 8 جيجا بايت ، شبكة 5G ، شريحتين - اسود سبيس</msg>
+<var>${PRODUCT_NAME}</var>
+<arg>${PRODUCT_TEXT}[${i}]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.094519" elapsed="0.034785"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
+<msg time="2026-01-29T15:15:18.131926" level="FAIL">'ابل ايفون 17 اير ، سعة 256 جيجا بايت ، رام 8 جيجا بايت ، شبكة 5G ، شريحتين - اسود سبيس' does not contain 'ايفون 16 ،'</msg>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="FAIL" start="2026-01-29T15:15:18.130881" elapsed="0.001570">'ابل ايفون 17 اير ، سعة 256 جيجا بايت ، رام 8 جيجا بايت ، شبكة 5G ، شريحتين - اسود سبيس' does not contain 'ايفون 16 ،'</status>
+</kw>
+<msg time="2026-01-29T15:15:18.132451" level="INFO">${STATUS} = False</msg>
+<var>${STATUS}</var>
+<arg>Should Contain</arg>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.129833" elapsed="0.003141"/>
+</kw>
+<if>
+<branch type="IF" condition="${STATUS} == True">
+<kw name="Click" owner="Browser">
+<arg>${PRODUCT_TEXT}[${i}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-01-29T15:15:18.134010" elapsed="0.000533"/>
+</kw>
+<return>
+<status status="NOT RUN" start="2026-01-29T15:15:18.134543" elapsed="0.000520"/>
+</return>
+<status status="NOT RUN" start="2026-01-29T15:15:18.132974" elapsed="0.002089"/>
+</branch>
+<branch type="ELSE">
+<kw name="Continue For Loop" owner="BuiltIn">
+<msg time="2026-01-29T15:15:18.137148" level="INFO">Continuing for loop from the next iteration.</msg>
+<doc>Skips the current FOR loop iteration and continues from the next.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.136156" elapsed="0.001499"/>
+</kw>
+<status status="PASS" start="2026-01-29T15:15:18.135650" elapsed="0.002005"/>
+</branch>
+<status status="PASS" start="2026-01-29T15:15:18.132974" elapsed="0.005209"/>
+</if>
+<var name="${i}">3</var>
+<status status="PASS" start="2026-01-29T15:15:18.093980" elapsed="0.044203"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-01-29T15:15:18.164721" level="INFO">Text: 'ابل ايفون 13 ، سعة 128 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت'</msg>
+<msg time="2026-01-29T15:15:18.164721" level="INFO">${PRODUCT_NAME} = ابل ايفون 13 ، سعة 128 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت</msg>
+<var>${PRODUCT_NAME}</var>
+<arg>${PRODUCT_TEXT}[${i}]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.139580" elapsed="0.025141"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
+<msg time="2026-01-29T15:15:18.172411" level="FAIL">'ابل ايفون 13 ، سعة 128 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت' does not contain 'ايفون 16 ،'</msg>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="FAIL" start="2026-01-29T15:15:18.171345" elapsed="0.001066">'ابل ايفون 13 ، سعة 128 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت' does not contain 'ايفون 16 ،'</status>
+</kw>
+<msg time="2026-01-29T15:15:18.172411" level="INFO">${STATUS} = False</msg>
+<var>${STATUS}</var>
+<arg>Should Contain</arg>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.170317" elapsed="0.003107"/>
+</kw>
+<if>
+<branch type="IF" condition="${STATUS} == True">
+<kw name="Click" owner="Browser">
+<arg>${PRODUCT_TEXT}[${i}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-01-29T15:15:18.173424" elapsed="0.001508"/>
+</kw>
+<return>
+<status status="NOT RUN" start="2026-01-29T15:15:18.174932" elapsed="0.000000"/>
+</return>
+<status status="NOT RUN" start="2026-01-29T15:15:18.173424" elapsed="0.001508"/>
+</branch>
+<branch type="ELSE">
+<kw name="Continue For Loop" owner="BuiltIn">
+<msg time="2026-01-29T15:15:18.177326" level="INFO">Continuing for loop from the next iteration.</msg>
+<doc>Skips the current FOR loop iteration and continues from the next.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.174932" elapsed="0.002394"/>
+</kw>
+<status status="PASS" start="2026-01-29T15:15:18.174932" elapsed="0.002394"/>
+</branch>
+<status status="PASS" start="2026-01-29T15:15:18.173424" elapsed="0.004408"/>
+</if>
+<var name="${i}">4</var>
+<status status="PASS" start="2026-01-29T15:15:18.138183" elapsed="0.039649"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-01-29T15:15:18.211870" level="INFO">Text: 'ابل ايفون 15 ، سعة 128 جيجا بايت ، رام 6 جيجا بايت ، شبكة 5G ، شريحة واحدة - ازرق'</msg>
+<msg time="2026-01-29T15:15:18.212377" level="INFO">${PRODUCT_NAME} = ابل ايفون 15 ، سعة 128 جيجا بايت ، رام 6 جيجا بايت ، شبكة 5G ، شريحة واحدة - ازرق</msg>
+<var>${PRODUCT_NAME}</var>
+<arg>${PRODUCT_TEXT}[${i}]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.178905" elapsed="0.033472"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
+<msg time="2026-01-29T15:15:18.215074" level="FAIL">'ابل ايفون 15 ، سعة 128 جيجا بايت ، رام 6 جيجا بايت ، شبكة 5G ، شريحة واحدة - ازرق' does not contain 'ايفون 16 ،'</msg>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="FAIL" start="2026-01-29T15:15:18.214016" elapsed="0.001058">'ابل ايفون 15 ، سعة 128 جيجا بايت ، رام 6 جيجا بايت ، شبكة 5G ، شريحة واحدة - ازرق' does not contain 'ايفون 16 ،'</status>
+</kw>
+<msg time="2026-01-29T15:15:18.215612" level="INFO">${STATUS} = False</msg>
+<var>${STATUS}</var>
+<arg>Should Contain</arg>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.213473" elapsed="0.002139"/>
+</kw>
+<if>
+<branch type="IF" condition="${STATUS} == True">
+<kw name="Click" owner="Browser">
+<arg>${PRODUCT_TEXT}[${i}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-01-29T15:15:18.216687" elapsed="0.000540"/>
+</kw>
+<return>
+<status status="NOT RUN" start="2026-01-29T15:15:18.217227" elapsed="0.000543"/>
+</return>
+<status status="NOT RUN" start="2026-01-29T15:15:18.216155" elapsed="0.001615"/>
+</branch>
+<branch type="ELSE">
+<kw name="Continue For Loop" owner="BuiltIn">
+<msg time="2026-01-29T15:15:18.219379" level="INFO">Continuing for loop from the next iteration.</msg>
+<doc>Skips the current FOR loop iteration and continues from the next.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.218852" elapsed="0.000527"/>
+</kw>
+<status status="PASS" start="2026-01-29T15:15:18.218314" elapsed="0.001608"/>
+</branch>
+<status status="PASS" start="2026-01-29T15:15:18.216155" elapsed="0.003767"/>
+</if>
+<var name="${i}">5</var>
+<status status="PASS" start="2026-01-29T15:15:18.178375" elapsed="0.041547"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-01-29T15:15:18.252627" level="INFO">Text: 'ابل ايفون 16 ، سعة 256 جيجا بايت ، رام 8 جيجا بايت ، شبكة 5G ، شريحة واحدة - تيل'</msg>
+<msg time="2026-01-29T15:15:18.252972" level="INFO">${PRODUCT_NAME} = ابل ايفون 16 ، سعة 256 جيجا بايت ، رام 8 جيجا بايت ، شبكة 5G ، شريحة واحدة - تيل</msg>
+<var>${PRODUCT_NAME}</var>
+<arg>${PRODUCT_TEXT}[${i}]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.221002" elapsed="0.031970"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${PRODUCT_NAME}</arg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.254529" elapsed="0.000512"/>
+</kw>
+<msg time="2026-01-29T15:15:18.255571" level="INFO">${STATUS} = True</msg>
+<var>${STATUS}</var>
+<arg>Should Contain</arg>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.253483" elapsed="0.002088"/>
+</kw>
+<if>
+<branch type="IF" condition="${STATUS} == True">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-29T15:15:18.258236" level="INFO">Clicks the element '//article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] &gt;&gt; nth=6'.</msg>
+<arg>${PRODUCT_TEXT}[${i}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.256647" elapsed="0.192385"/>
+</kw>
+<return>
+<status status="PASS" start="2026-01-29T15:15:18.450403" elapsed="0.000000"/>
+</return>
+<status status="PASS" start="2026-01-29T15:15:18.255571" elapsed="0.194832"/>
+</branch>
+<branch type="ELSE">
+<kw name="Continue For Loop" owner="BuiltIn">
+<doc>Skips the current FOR loop iteration and continues from the next.</doc>
+<status status="NOT RUN" start="2026-01-29T15:15:18.450403" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-29T15:15:18.450403" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-01-29T15:15:18.255571" elapsed="0.197260"/>
+</if>
+<var name="${i}">6</var>
+<status status="PASS" start="2026-01-29T15:15:18.220464" elapsed="0.232367"/>
+</iter>
+<var>${i}</var>
+<value>0</value>
+<value>${PRODUCT_COUNT}</value>
+<status status="PASS" start="2026-01-29T15:15:17.897292" elapsed="0.555539"/>
+</for>
+<arg>ايفون 16 ،</arg>
+<status status="PASS" start="2026-01-29T15:15:17.800286" elapsed="0.653053"/>
+</kw>
+<kw name="Click on Add To Cart Button" owner="ProductDetailsPage">
+<kw name="Get Elements" owner="Browser">
+<msg time="2026-01-29T15:15:21.690707" level="INFO">Found locator('//button[@data-slot="button"][contains(text(),"أضف للسلة")]').first(),locator('//button[@data-slot="button"][contains(text(),"أضف للسلة")]').nth(1),locator('//button[@data-slot="button"][contains(text(),"أضف للسلة")]').nth(2) Locators successfully.</msg>
+<msg time="2026-01-29T15:15:21.690707" level="INFO">${ADD_TO_CART_Text} = ['//button[@data-slot="button"][contains(text(),"أضف للسلة")] &gt;&gt; nth=0', '//button[@data-slot="button"][contains(text(),"أضف للسلة")] &gt;&gt; nth=1', '//button[@data-slot="button"][contains(text(),"أضف للس...</msg>
+<var>${ADD_TO_CART_Text}</var>
+<arg>${ADD_TO_CART_BUTTON}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2026-01-29T15:15:18.456138" elapsed="3.234569"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-29T15:15:21.694725" level="FAIL">List '${ADD_TO_CART_Text}' has no item in index 3.</msg>
+<arg>${ADD_TO_CART_Text}[3]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-01-29T15:15:21.694218" elapsed="0.000507">List '${ADD_TO_CART_Text}' has no item in index 3.</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${ADD_TO_CART_Text}[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-01-29T15:15:21.694725" elapsed="0.003450"/>
+</kw>
+<status status="FAIL" start="2026-01-29T15:15:18.455123" elapsed="3.243052">List '${ADD_TO_CART_Text}' has no item in index 3.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-01-29T15:15:21.698175" elapsed="0.000000"/>
+</kw>
+<kw name="End Webtest" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-01-29T15:15:22.551281" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-29T15:15:21.701689" elapsed="0.852605"/>
+</kw>
+<status status="PASS" start="2026-01-29T15:15:21.698175" elapsed="0.856626"/>
+</kw>
+<doc>Search for Iphone 16</doc>
+<tag>Functional</tag>
+<tag>Search</tag>
+<tag>TC001</tag>
+<status status="FAIL" start="2026-01-29T15:14:54.680956" elapsed="27.873845">List '${ADD_TO_CART_Text}' has no item in index 3.</status>
+</test>
+<doc>Test Suite For Btech website</doc>
+<status status="FAIL" start="2026-01-29T15:14:53.410114" elapsed="29.151266"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Functional</stat>
+<stat pass="0" fail="1" skip="0">Search</stat>
+<stat pass="0" fail="1" skip="0">TC001</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Iphone16">Iphone16</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

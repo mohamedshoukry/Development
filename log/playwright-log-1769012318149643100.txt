@@ -1,0 +1,35 @@
+{"level":30,"time":"2026-01-21T16:18:40.861Z","pid":53736,"hostname":"TOC2LTMSHOUKRY","msg":"Listening on 57919"}
+(node:53736) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:12202:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:13094:59)
+    at PlaywrightServer.setTimeout (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:13342:57)
+    at Object.onReceiveHalfClose (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-01-21T16:18:41.324Z","pid":53736,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-21T16:18:41.325Z","pid":53736,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:12202:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:13094:59)
+    at PlaywrightServer.setTimeout (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:13342:57)
+    at Object.onReceiveHalfClose (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-01-21T16:18:41.455Z","pid":53736,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-21T16:18:41.456Z","pid":53736,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-21T16:18:44.204Z","pid":53736,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-21T16:18:44.204Z","pid":53736,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method closeAllBrowsers"}

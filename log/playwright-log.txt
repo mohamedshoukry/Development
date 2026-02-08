@@ -1,0 +1,59 @@
+{"level":30,"time":"2026-01-21T16:59:11.360Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Listening on 64982"}
+(node:63916) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2026-01-21T16:59:11.625Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-01-21T16:59:14.158Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Adding browser to stack: chromium, version: 131.0.6778.33"}
+{"level":30,"time":"2026-01-21T16:59:14.159Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-01-21T16:59:14.159Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-01-21T16:59:14.174Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-01-21T16:59:14.175Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":true,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}}"}
+{"level":30,"time":"2026-01-21T16:59:14.175Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2026-01-21T16:59:14.175Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Trace file: "}
+{"level":30,"time":"2026-01-21T16:59:14.246Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Changed active context"}
+{"level":30,"time":"2026-01-21T16:59:14.246Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method newContext"}
+{"level":30,"time":"2026-01-21T16:59:14.258Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-21T16:59:14.259Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2026-01-21T16:59:14.875Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-21T16:59:14.876Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Changed active page"}
+{"level":30,"time":"2026-01-21T16:59:19.674Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-21T16:59:19.688Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-01-21T16:59:19.688Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":800,\"width\":1490}}"}
+{"level":30,"time":"2026-01-21T16:59:19.688Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2026-01-21T16:59:19.689Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Trace file: "}
+{"level":30,"time":"2026-01-21T16:59:19.706Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Changed active context"}
+{"level":30,"time":"2026-01-21T16:59:19.706Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method newContext"}
+{"level":30,"time":"2026-01-21T16:59:19.726Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-01-21T16:59:19.916Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Removed page=4caff7e9-893c-478e-be94-6ad2fe9d473e from context=85f8fa27-860e-4749-b617-79e61926201d page stack"}
+{"level":30,"time":"2026-01-21T16:59:20.646Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:12202:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:13094:59)
+    at PlaywrightServer.setTimeout (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:13342:57)
+    at Object.onReceiveHalfClose (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-01-21T16:59:20.737Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-21T16:59:20.738Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:12202:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:13094:59)
+    at PlaywrightServer.setTimeout (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:13342:57)
+    at Object.onReceiveHalfClose (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-01-21T16:59:20.836Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-21T16:59:20.836Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-21T16:59:25.938Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-21T16:59:25.939Z","pid":63916,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method closeAllBrowsers"}

@@ -1,0 +1,85 @@
+{"level":30,"time":"2026-01-29T12:14:57.880Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Listening on 63601"}
+(node:8968) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2026-01-29T12:14:58.350Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-01-29T12:15:00.320Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Adding browser to stack: chromium, version: 131.0.6778.33"}
+{"level":30,"time":"2026-01-29T12:15:00.321Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-01-29T12:15:00.321Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-01-29T12:15:00.346Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-29T12:15:00.346Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2026-01-29T12:15:00.474Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Changed active context"}
+{"level":30,"time":"2026-01-29T12:15:01.329Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-29T12:15:01.330Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Changed active page"}
+{"level":30,"time":"2026-01-29T12:15:09.294Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-29T12:15:12.341Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-29T12:15:12.342Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Strict mode is enabled, find Locator with //input[@data-testid=\"search-input\"] >> visible=true in page."}
+{"level":30,"time":"2026-01-29T12:15:12.586Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-29T12:15:12.597Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-29T12:15:12.597Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Strict mode is enabled, find Locator with //input[@data-testid=\"search-input\"] >> visible=true in page."}
+{"level":30,"time":"2026-01-29T12:15:12.656Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-29T12:15:12.669Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method press"}
+{"level":30,"time":"2026-01-29T12:15:12.670Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Strict mode is enabled, find Locator with //input[@data-testid=\"search-input\"] >> visible=true in page."}
+{"level":30,"time":"2026-01-29T12:15:12.769Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method press"}
+{"level":30,"time":"2026-01-29T12:15:17.848Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getElements"}
+{"level":30,"time":"2026-01-29T12:15:17.850Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Strict mode is disabled, return Locator: //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] in page."}
+{"level":30,"time":"2026-01-29T12:15:17.850Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2026-01-29T12:15:17.894Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Found 8 elements."}
+{"level":30,"time":"2026-01-29T12:15:17.895Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getElements"}
+{"level":30,"time":"2026-01-29T12:15:17.915Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getText"}
+{"level":30,"time":"2026-01-29T12:15:17.915Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Strict mode is enabled, find Locator with //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=0 in page."}
+{"level":30,"time":"2026-01-29T12:15:17.978Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Retrieved text for element //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=0 containing ابل ايفون 13 ، سعة 128 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت"}
+{"level":30,"time":"2026-01-29T12:15:17.978Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getText"}
+{"level":30,"time":"2026-01-29T12:15:18.000Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getText"}
+{"level":30,"time":"2026-01-29T12:15:18.000Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Strict mode is enabled, find Locator with //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=1 in page."}
+{"level":30,"time":"2026-01-29T12:15:18.031Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Retrieved text for element //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=1 containing ابل ايفون 13 ، سعة 256 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت"}
+{"level":30,"time":"2026-01-29T12:15:18.031Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getText"}
+{"level":30,"time":"2026-01-29T12:15:18.049Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getText"}
+{"level":30,"time":"2026-01-29T12:15:18.049Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Strict mode is enabled, find Locator with //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=2 in page."}
+{"level":30,"time":"2026-01-29T12:15:18.079Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Retrieved text for element //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=2 containing ابل ايفون 16 بلس ، سعة 128 جيجا بايت ، رام 8 جيجا بايت ، شبكة 5G ، شريحة واحدة - اسود"}
+{"level":30,"time":"2026-01-29T12:15:18.080Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getText"}
+{"level":30,"time":"2026-01-29T12:15:18.099Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getText"}
+{"level":30,"time":"2026-01-29T12:15:18.099Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Strict mode is enabled, find Locator with //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=3 in page."}
+{"level":30,"time":"2026-01-29T12:15:18.126Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Retrieved text for element //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=3 containing ابل ايفون 17 اير ، سعة 256 جيجا بايت ، رام 8 جيجا بايت ، شبكة 5G ، شريحتين - اسود سبيس"}
+{"level":30,"time":"2026-01-29T12:15:18.126Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getText"}
+{"level":30,"time":"2026-01-29T12:15:18.145Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getText"}
+{"level":30,"time":"2026-01-29T12:15:18.145Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Strict mode is enabled, find Locator with //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=4 in page."}
+{"level":30,"time":"2026-01-29T12:15:18.167Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Retrieved text for element //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=4 containing ابل ايفون 13 ، سعة 128 جيجا بايت ، رام 4 جيجا بايت ، شبكة 5G ، شريحة واحدة - ميدنايت"}
+{"level":30,"time":"2026-01-29T12:15:18.167Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getText"}
+{"level":30,"time":"2026-01-29T12:15:18.184Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getText"}
+{"level":30,"time":"2026-01-29T12:15:18.185Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Strict mode is enabled, find Locator with //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=5 in page."}
+{"level":30,"time":"2026-01-29T12:15:18.210Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Retrieved text for element //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=5 containing ابل ايفون 15 ، سعة 128 جيجا بايت ، رام 6 جيجا بايت ، شبكة 5G ، شريحة واحدة - ازرق"}
+{"level":30,"time":"2026-01-29T12:15:18.210Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getText"}
+{"level":30,"time":"2026-01-29T12:15:18.226Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getText"}
+{"level":30,"time":"2026-01-29T12:15:18.227Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Strict mode is enabled, find Locator with //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=6 in page."}
+{"level":30,"time":"2026-01-29T12:15:18.250Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Retrieved text for element //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=6 containing ابل ايفون 16 ، سعة 256 جيجا بايت ، رام 8 جيجا بايت ، شبكة 5G ، شريحة واحدة - تيل"}
+{"level":30,"time":"2026-01-29T12:15:18.250Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getText"}
+{"level":30,"time":"2026-01-29T12:15:18.263Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-29T12:15:18.264Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Strict mode is enabled, find Locator with //article//footer//h2[@class='text-xsmall line-clamp-2 max-h-[42px] w-full text-absoluteDark font-medium'] >> nth=6 in page."}
+{"level":30,"time":"2026-01-29T12:15:18.448Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method click"}
+{"level":30,"time":"2026-01-29T12:15:18.462Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getElements"}
+{"level":30,"time":"2026-01-29T12:15:18.463Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Strict mode is disabled, return Locator: //button[@data-slot=\"button\"][contains(text(),\"أضف للسلة\")] in page."}
+{"level":30,"time":"2026-01-29T12:15:18.463Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2026-01-29T12:15:21.689Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Found 3 elements."}
+{"level":30,"time":"2026-01-29T12:15:21.690Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getElements"}
+{"level":30,"time":"2026-01-29T12:15:21.709Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-01-29T12:15:21.763Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Removed page=fe52b19d-85e1-4cc8-b484-5c416e0ee145 from context=32d674c1-c183-41b9-a321-733f4ae0e19c page stack"}
+{"level":30,"time":"2026-01-29T12:15:22.552Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2026-01-29T12:15:22.558Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-29T12:15:22.559Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:12202:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:13094:59)
+    at PlaywrightServer.setTimeout (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:13342:57)
+    at Object.onReceiveHalfClose (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\mshoukry\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-01-29T12:15:22.657Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-29T12:15:22.657Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-29T12:15:22.831Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-29T12:15:22.832Z","pid":8968,"hostname":"TOC2LTMSHOUKRY","msg":"End of node method closeAllBrowsers"}
